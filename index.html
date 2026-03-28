@@ -370,31 +370,34 @@
       font-weight: 300;
     }
 
-    /* Pills */
-    .pills-grid {
+    /* Outcome list */
+    .outcomes-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 12px;
+      gap: 10px 24px;
       margin-bottom: 38px;
       max-width: 380px;
     }
 
-    .pill {
-      padding: 10px 16px;
-      border: 1px solid rgba(212,168,83,0.38);
-      border-radius: 50px;
-      font-size: 0.78rem;
+    .outcome-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
       font-weight: 600;
-      letter-spacing: 0.09em;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
-      color: var(--gold);
-      background: rgba(212,168,83,0.06);
-      text-align: center;
-      transition: all 0.3s ease;
+      color: var(--text-secondary);
     }
-    .pill:hover {
-      background: rgba(212,168,83,0.14);
-      border-color: var(--gold);
+
+    .outcome-item::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold);
+      flex-shrink: 0;
     }
 
     /* CTA row */
@@ -796,7 +799,7 @@
       .hero-label,
       .hero-subtitle { text-align: center; }
 
-      .pills-grid { max-width: 100%; }
+      .outcomes-grid { max-width: 100%; }
       .hero-ctas  { justify-content: center; }
       .social-row { justify-content: center; }
 
@@ -876,12 +879,12 @@
           Growth &amp; Insights Expert &nbsp;|&nbsp; 10+ Years Corporate Experience
         </p>
 
-        <!-- Pills -->
-        <div class="pills-grid">
-          <span class="pill h-anim pop" id="ha-p1">Find Purpose</span>
-          <span class="pill h-anim pop" id="ha-p2">Boost Career</span>
-          <span class="pill h-anim pop" id="ha-p3">Build Confidence</span>
-          <span class="pill h-anim pop" id="ha-p4">Self Transform</span>
+        <!-- Outcomes -->
+        <div class="outcomes-grid">
+          <span class="outcome-item h-anim pop" id="ha-p1">Find Purpose</span>
+          <span class="outcome-item h-anim pop" id="ha-p2">Boost Career</span>
+          <span class="outcome-item h-anim pop" id="ha-p3">Build Confidence</span>
+          <span class="outcome-item h-anim pop" id="ha-p4">Self Transform</span>
         </div>
 
         <!-- CTAs -->
