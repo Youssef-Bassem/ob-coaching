@@ -1,6 +1,12 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('Load Coaching Ob Site', new Date());
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
@@ -1082,6 +1088,7 @@
               <a
                 href="#contact"
                 class="btn-gold"
+                id="book-session-cta"
                 aria-label="Book a coaching session"
                 >Book A Session</a
               >
@@ -1613,5 +1620,15 @@
         { passive: true },
       );
     </script>
+    <script>
+      document.getElementById('book-session-cta').addEventListener('click', function() {
+        gtag('event', 'generate_lead', {
+          'event_category': 'engagement',
+          'event_label': 'Hero Book Session Click',
+          'value': 1.0
+        });
+        console.log('Event sent to Google Analytics'); // Optional: for testing
+      });
+  </script>
   </body>
 </html>
