@@ -1,18 +1,18 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=TAG_ID"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('Load Coaching Ob Site', new Date());
-    </script>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-TBWT8G2Z');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <title>
-      Omar Bassem | Certified Life Coach for Millennials &amp; GenZs
-    </title>
+    <title>Omar Bassem | Certified Life Coach for Millennials &amp; GenZs</title>
     <meta
       name="description"
       content="Omar Bassem is a Certified Life Coach helping Millennials &amp; GenZs navigate professional and personal challenges. Book a free chemistry call today."
@@ -995,6 +995,11 @@
     </style>
   </head>
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TBWT8G2Z"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <!-- ================================================
      MOBILE MENU OVERLAY
 ================================================ -->
@@ -1619,25 +1624,6 @@
         },
         { passive: true },
       );
-    </script>
-    <script>
-      // This ensures the DOM is fully loaded before the script runs
-      document.addEventListener('DOMContentLoaded', function() {
-        const bookBtn = document.getElementById('book-session-cta');
-        
-        if (bookBtn) {
-          bookBtn.addEventListener('click', function() {
-            gtag('event', 'generate_lead', {
-              'event_category': 'engagement',
-              'event_label': 'Hero Book Session Click',
-              'value': 1.0
-            });
-            console.log('Event sent to Google Analytics');
-          });
-        } else {
-          console.error('Button with ID "book-session-cta" not found!');
-        }
-      });
     </script>
   </body>
 </html>
